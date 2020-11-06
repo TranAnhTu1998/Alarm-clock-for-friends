@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.riddlezone.mathalarmclock.MainActivity">
+    <item
+        android:id="@+id/background"
+        android:orderInCategory="100"
+        android:title="@string/action_background"
+        android:checkable="true"
+        app:showAsAction="never" />
+</menu>

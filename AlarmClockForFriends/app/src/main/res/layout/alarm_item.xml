@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alarm_item_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/alarmitemview_padding_top"
+    android:paddingBottom="@dimen/alarmitemview_padding_bottom">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/alarm_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/alarmlistview_item_margin_left">
+
+        <TextView
+            android:id="@+id/alarm_item_time"
+            android:layout_width="@dimen/alarmlistview_alarmtime_width"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text=""
+            android:textSize="@dimen/alarmlistview_alarmtime_font_size"
+            android:textColor="@color/colorGray"
+            android:textStyle="bold"
+            android:gravity="left"/>
+
+        <Switch
+            android:id="@+id/alarm_item_switch_alarmonoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/alarm_item_time"
+            android:layout_marginLeft="@dimen/alarmlistview_alarmonoff_margin_left"/>
+
+        <ImageButton
+            android:id="@+id/alarm_item_delete"
+            android:layout_width="@dimen/alarmlistview_delete_width"
+            android:layout_height="@dimen/alarmlistview_delete_height"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="@dimen/alarmlistview_delete_margin_right"
+            android:src="@android:drawable/ic_menu_delete"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

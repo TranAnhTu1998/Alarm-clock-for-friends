@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/label_alarmtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/button_alarmtime"
+        app:layout_constraintBottom_toBottomOf="@+id/button_alarmtime"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/editalarm_label_margin_left"
+        android:text="@string/label_alarmtime"
+        android:textSize="@dimen/editalarm_label_font_size"
+        android:gravity="left"
+        android:textColor="@color/colorBlack"/>
+
+    <Button
+        android:id="@+id/button_alarmtime"
+        android:layout_width="@dimen/editalarm_button_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/label_alarmtime"
+        android:layout_marginTop="@dimen/editalarm_label_margin_top"
+        android:layout_marginLeft="@dimen/editalarm_button_margin_left"
+        android:text=""
+        android:textSize="@dimen/editalarm_button_font_size"
+        android:textColor="@color/colorRed"/>
+
+    <CheckBox
+        android:id="@+id/checkBox_alarmReplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/button_alarmtime"
+        app:layout_constraintLeft_toLeftOf="@+id/label_alarmtime"
+        android:layout_marginTop="@dimen/editalarm_label_margin_top"
+        android:text="@string/label_alarmreplay"
+        android:textSize="@dimen/editalarm_label_font_size"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/label_alarmonoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/switch_alarmonoff"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_alarmonoff"
+        app:layout_constraintLeft_toLeftOf="@+id/label_alarmtime"
+        android:text="@string/label_alarmonoff"
+        android:textSize="@dimen/editalarm_label_font_size"
+        android:textColor="@color/colorBlack"/>
+
+    <Switch
+        android:id="@+id/switch_alarmonoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_alarmReplay"
+        app:layout_constraintLeft_toLeftOf="@+id/button_alarmtime"
+        android:layout_marginTop="@dimen/editalarm_label_margin_top"/>
+
+    <TextView
+        android:id="@+id/label_alarmmelody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/button_alarmmelody"
+        app:layout_constraintBottom_toBottomOf="@+id/button_alarmmelody"
+        app:layout_constraintLeft_toLeftOf="@+id/label_alarmtime"
+        android:text="@string/label_alarmmelody"
+        android:textSize="@dimen/editalarm_label_font_size"
+        android:textColor="@color/colorBlack"/>
+
+    <Button
+        android:id="@+id/button_alarmmelody"
+        android:layout_width="@dimen/editalarm_button_width"
+        android:layout_height="@dimen/editalarm_button_height"
+        app:layout_constraintTop_toBottomOf="@+id/switch_alarmonoff"
+        app:layout_constraintLeft_toLeftOf="@+id/button_alarmtime"
+        android:layout_marginTop="@dimen/editalarm_label_margin_top"
+        android:text=""
+        android:textSize="@dimen/editalarm_button_font_size"
+        android:textColor="@color/colorRed"/>
+
+    <ImageButton
+        android:id="@+id/button_alarmmelody_play"
+        android:layout_width="@dimen/editalarm_play_button_width"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_media_play"
+        android:layout_marginLeft="@dimen/editalarmplay_button_margin_left"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/button_alarmmelody"
+        app:layout_constraintLeft_toRightOf="@+id/button_alarmmelody"
+        app:layout_constraintTop_toTopOf="@+id/button_alarmmelody" />
+
+    <ImageButton
+        android:id="@+id/button_alarmmelody_stop"
+        android:layout_width="@dimen/editalarm_play_button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/editalarmplay_button_margin_left"
+        android:src="@android:drawable/ic_media_pause"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/button_alarmmelody"
+        app:layout_constraintLeft_toRightOf="@+id/button_alarmmelody"
+        app:layout_constraintTop_toTopOf="@+id/button_alarmmelody" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

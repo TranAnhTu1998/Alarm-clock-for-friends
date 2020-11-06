@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="500dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/alarmdialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text=""
+        android:textSize="@dimen/alarmdialog_font_size"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"/>
+
+    <EditText
+        android:id="@+id/alarmdialog_edittext"
+        android:layout_width="@dimen/alarmdialog_button_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/alarmdialog_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/editalarm_label_margin_top"
+        android:textSize="@dimen/alarmdialog_font_size"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/button_alarmdialog_ok"
+        android:layout_width="@dimen/alarmdialog_button_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/alarmdialog_edittext"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/editalarm_label_margin_top"
+        android:text="OK"
+        android:textSize="@dimen/alarmdialog_font_size"
+        android:textColor="@color/colorBlack"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

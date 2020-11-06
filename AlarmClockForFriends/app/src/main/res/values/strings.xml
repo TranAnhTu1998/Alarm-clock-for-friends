@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Умный будильник</string>
+    <string name="action_background">Обработка</string>
+
+    <string name="label_alarmtime">Время:</string>
+    <string name="label_alarmreplay">Ежедневно:</string>
+    <string name="label_alarmmelody">Мелодия:</string>
+    <string name="label_alarmonoff">Активен:</string>
+
+    <string name="new_alarm_title">Создание будильника</string>
+    <string name="edit_alarm_title">Редактирование будильника</string>
+    <string name="edit_alarm_nomelody">нет мелодии</string>
+    <string name="edit_alarm_error">Ошибка! Укажите мелодию будильника!</string>
+    <string name="edit_choose_melody">Выберите мелодию</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">ОТМЕНА</string>
+
+    <string name="delete_title">Удаление будильника</string>
+    <string name="delete_alarm">Вы действительно хотите удалить будильник?</string>
+
+</resources>
